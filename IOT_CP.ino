@@ -1,10 +1,10 @@
 #include <ESP8266WiFi.h>
 #include <ThingSpeak.h>
 
-const char* ssid = "Snowflakes912";
-const char* password = "snowflakes2304";
-const char* thingSpeakApiKey = "O8453160W1HONWYD";
-const unsigned long channelId = 2476636;
+const char* ssid = "wifiname";
+const char* password = "wifipassword";
+const char* thingSpeakApiKey = "API_KEY";
+const unsigned long channelId = Channel_ID;
 const int strainGaugePin = A0;        // Analog pin to which the strain gauge sensor is connected
 const int vibrationThreshold = 50;    // Adjust this threshold according to your sensor and application
 const int buzzerPin = 1;             // Digital pin to which the buzzer is connected
