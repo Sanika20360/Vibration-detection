@@ -14,7 +14,6 @@ WiFiClient client;
 void setup() {
   Serial.begin(9600);
   delay(100);
-
   // Connect to Wi-Fi
   WiFi.begin(ssid, password);
   Serial.println("Connecting to WiFi...");
@@ -28,7 +27,7 @@ void setup() {
   Serial.println("WiFi connected");
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
-
+  
   // Initialize ThingSpeak client
   ThingSpeak.begin(client);
 
